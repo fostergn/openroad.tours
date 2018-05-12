@@ -1,0 +1,27 @@
+{
+  "name": "openroad.tours",
+  "version": "1.0.0",
+  "description": "Motorcycle Tour Site",
+  "author": "Gavin Foster",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "element-ui": "^2.2.1",
+    "nuxt": "^1.0.0",
+    "vue-router": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "cross-env": "^5.0.1",
+    "eslint": "^4.15.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-vue": "^4.0.0"
+  }
+}
