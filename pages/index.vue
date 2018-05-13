@@ -1,41 +1,46 @@
 <template>
-  <Menu />
+  <div>
+    <Menu />
+    <div class="video__wrapper">
+      <div class="video__offset">
+        <no-ssr>
+          <plyr-youtube id="iIe87ubHQyA" :pe="false" />
+        </no-ssr>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
   import Menu from '@/components/Menu'
+
   export default {
-    data() {
-      return {
-        activeIndex: '1',
-      };
-    },
-    methods: {
-      handleSelect(key, keyPath) {
-        console.log(key, keyPath);
-      }
-    },
     components: {
       Menu
     }
   }
 </script>
 
-<style scoped>
-  .title {
-    padding:0 14px;
-    font-size:1.2rem;
-    display: flex;
-    align-items: center;
-    height:60px;
-  }
-  .el-menu {
-    display:flex;
-    align-items:center;
-    /*justify-content:flex-end;*/
-  }
+<style lang="scss" scoped>
+.video__wrapper {
+  clip-path: polygon(0 2%, 100% 0%, 100% 96%, 0 100%);
+  position:relative;
+  overflow:hidden;
+}
 
-  li:nth-child(2) {
-    margin-left:auto;
+.video__offset {
+  position:relative;
+  top:-8vw;
+
+  &:after {
+    content:'';
+    width:100%;
+    bottom:0;
+    position:absolute;
+    height:8vw;
+    background-color:white;
+    z-index:10;
+    clip-path: polygon(0% 0%, 100% 13%, 100% 100%, 0 100%);
   }
+}
 </style>

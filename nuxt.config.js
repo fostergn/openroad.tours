@@ -27,14 +27,18 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    'element-ui/lib/theme-chalk/index.css'
+    'element-ui/lib/theme-chalk/index.css',
+    '@/assets/css/reset.css',
+    '@/assets/css/main.scss',
+    'vue-plyr/dist/vue-plyr.css'
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/element-ui'
+    '@/plugins/element-ui',
+    { src: '@/plugins/vue-plyr', ssr: false }
   ],
 
   /*
@@ -50,6 +54,7 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
+    vendor: ['vue-plyr'],
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {

@@ -1,9 +1,9 @@
 <template>
   <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-    <h1 class="title">Open Road Tours</h1>
+    <h1 class="title"><nuxt-link to="/">Open Road Tours</nuxt-link></h1>
     <el-submenu index="1">
-      <template slot="title">Tours</template>
-      <el-menu-item index="1-1">North Vietnam</el-menu-item>
+      <template slot="title"><nuxt-link to="/tours">Tours</nuxt-link></template>
+      <el-menu-item index="1-1"><nuxt-link to="/tours/north-vietnam">North Vietnam</nuxt-link></el-menu-item>
       <el-menu-item index="1-2">Tailormade</el-menu-item>
       <el-menu-item index="1-2">Before You Go</el-menu-item>
     </el-submenu>
@@ -28,12 +28,16 @@
 </script>
 
 <style scoped>
+  .el-menu {
+    border-bottom:none;
+  }
   .title {
     padding:0 14px;
     font-size:1.2rem;
     display: flex;
     align-items: center;
     height:60px;
+    cursor:pointer;
   }
   .el-menu {
     display:flex;
