@@ -1,5 +1,6 @@
 <template>
-  <el-form ref="form" :model="form" label-width="120px">
+  <el-form ref="form" name="contact" action="" method="post" netlify :model="form" label-width="120px">
+    <input type="hidden" name="form-name" value="contact" />
     <header>
       <h5>We'd love to hear from you, so please contact us. Fill out the form with any information or questions and we will contact you as soon as possible.</h5>
     </header>
