@@ -8,6 +8,7 @@
       <el-menu-item index="1-2"><nuxt-link to="/tours/general-info">Before You Go</nuxt-link></el-menu-item>
     </el-submenu>
     <el-menu-item index="2"><nuxt-link to="/blog">Blog</nuxt-link></el-menu-item>
+    <el-menu-item index="2"><nuxt-link to="/about">Who We Are</nuxt-link></el-menu-item>
     <el-menu-item index="3"><nuxt-link to="/contact">Contact Us</nuxt-link></el-menu-item>
   </el-menu>
 </template>

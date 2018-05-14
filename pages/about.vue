@@ -1,6 +1,6 @@
 <template>
   <div>
-    Before you go
+    About
   </div>
 </template>
 

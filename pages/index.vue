@@ -5,48 +5,30 @@
         <div class="video__offset">
           <div class="video__gradient"></div>
           <HeroContent />
-          <no-ssr>
-            <plyr-youtube
-              id="iIe87ubHQyA"
-              allowtransparency
-              allow="autoplay"
-              loop
-              :options="videoOptions"
-              :pe="false"
-              :crossorigin="true"
-            />
-          </no-ssr>
+          <HeroVideo />
         </div>
       </div>
     </div>
     <MainContent/>
     <SecondaryContent/>
+    <TertiaryContent/>
   </div>
 </template>
 
 <script>
   import HeroContent from '@/components/HeroContent'
+  import HeroVideo from '@/components/HeroVideo'
   import MainContent from '@/components/MainContent'
   import SecondaryContent from '@/components/SecondaryContent'
+  import TertiaryContent from '@/components/TertiaryContent'
 
   export default {
-    computed: {
-      videoOptions () {
-        return {
-          "autoplay": true,
-          "loop": { active: true},
-          "settings": ['loop'],
-          "hideControls": true,
-          "muted": true,
-          "controls": [],
-          "poster": "https://scontent.fmex7-1.fna.fbcdn.net/v/t1.0-9/26239667_1684505514965049_4115751240757307826_n.jpg?_nc_cat=0&oh=3c1c10a997bda10faf3322c2dac68dcf&oe=5B9B1D27"
-        }
-      }
-    },
     components: {
       HeroContent,
+      HeroVideo,
       MainContent,
-      SecondaryContent
+      SecondaryContent,
+      TertiaryContent
     }
   }
 </script>

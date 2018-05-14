@@ -21,7 +21,7 @@
   footer {
     font-size: .8rem;
     background-color: #f5f5f5;
-    padding: 1rem;
+    padding: 1rem 3rem;
     color: #888;
     display:flex;
     justify-content:space-between;
