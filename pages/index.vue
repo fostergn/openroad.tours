@@ -48,11 +48,27 @@ img {
   clip-path: polygon(0 2%, 100% 0%, 100% 96%, 0 100%);
   position:relative;
   overflow:hidden;
+  height: calc((9/16) * 100vw);
+  transition:.3s;
 }
 
 .video__offset {
   position:relative;
   top:-8vw;
+  transition:.3s;
+  height:100%;
+
+  &:before {
+    content: '';
+    background-color: #606266;
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image:url('https://scontent.fmex6-1.fna.fbcdn.net/v/t1.0-9/26196171_1681996965215904_1718448388478153231_n.jpg?_nc_cat=0&oh=6b934853211937ae8b7d15c486cfb4ca&oe=5B81AC70')
+  }
 
   &:after {
     content:'';
