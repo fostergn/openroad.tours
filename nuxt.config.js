@@ -50,6 +50,10 @@ module.exports = {
   modules: [
   ],
 
+
+  router: {
+  },
+
   /*
   ** Build configuration
   */

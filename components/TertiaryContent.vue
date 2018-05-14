@@ -1,5 +1,6 @@
 <template>
   <section>
+    <a name="contact"></a>
     <header>
       <h3>Explore Vietnam With Us</h3>
     </header>
