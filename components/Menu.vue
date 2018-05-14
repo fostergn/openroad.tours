@@ -5,7 +5,6 @@
       <template slot="title"><nuxt-link to="/tours/north-vietnam">Tours</nuxt-link></template>
       <el-menu-item index="/tours/north-vietnam"><nuxt-link to="/tours/north-vietnam">North Vietnam</nuxt-link></el-menu-item>
       <el-menu-item index="/tours/tailormade"><nuxt-link to="/tours/tailormade">Tailormade</nuxt-link></el-menu-item>
-      <el-menu-item index="/tours/general-info"><nuxt-link to="/tours/general-info">Before You Go</nuxt-link></el-menu-item>
     </el-submenu>
     <el-menu-item index="/blog" ><nuxt-link to="/blog">Blog</nuxt-link></el-menu-item>
     <el-menu-item index="/about" ><nuxt-link to="/about">Who We Are</nuxt-link></el-menu-item>
