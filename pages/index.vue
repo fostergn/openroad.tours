@@ -48,7 +48,7 @@ img {
   clip-path: polygon(0 2%, 100% 0%, 100% 96%, 0 100%);
   position:relative;
   overflow:hidden;
-  height: calc((9/16) * 100vw);
+  height: calc((9/16) * 92vw);
   transition:.3s;
 }
 
@@ -57,6 +57,7 @@ img {
   top:-8vw;
   transition:.3s;
   height:100%;
+  overflow:hidden;
 
   &:before {
     content: '';
