@@ -1,14 +1,14 @@
 <template>
-  <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
+  <el-menu :router="true" :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
     <h1 class="title"><nuxt-link to="/">Open Road Tours</nuxt-link></h1>
     <el-submenu index="1">
       <template slot="title"><nuxt-link to="/tours">Tours</nuxt-link></template>
       <el-menu-item index="1-1"><nuxt-link to="/tours/north-vietnam">North Vietnam</nuxt-link></el-menu-item>
-      <el-menu-item index="1-2">Tailormade</el-menu-item>
-      <el-menu-item index="1-2">Before You Go</el-menu-item>
+      <el-menu-item index="1-2"><nuxt-link to="/tours/tailormade">Tailormade</nuxt-link></el-menu-item>
+      <el-menu-item index="1-2"><nuxt-link to="/tours/general-info">Before You Go</nuxt-link></el-menu-item>
     </el-submenu>
-    <el-menu-item index="2">Blog</el-menu-item>
-    <el-menu-item index="3">Contact</el-menu-item>
+    <el-menu-item index="2"><nuxt-link to="/blog">Blog</nuxt-link></el-menu-item>
+    <el-menu-item index="3"><nuxt-link to="/contact">Contact Us</nuxt-link></el-menu-item>
   </el-menu>
 </template>
 

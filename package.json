@@ -15,8 +15,10 @@
   "dependencies": {
     "element-ui": "^2.2.1",
     "nuxt": "^1.0.0",
+    "vue-awesome": "^3.0.0",
     "vue-plyr": "^3.0.0",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "webpack-node-externals": "^1.7.2"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

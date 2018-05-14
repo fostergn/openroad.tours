@@ -1,4 +1,5 @@
 const pkg = require('./package')
+const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
   mode: 'universal',
@@ -14,7 +15,8 @@ module.exports = {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:400,700|Playfair+Display:700' }
     ]
   },
 
@@ -38,6 +40,7 @@ module.exports = {
   */
   plugins: [
     '@/plugins/element-ui',
+    '~/plugins/vue-awesome.js',
     { src: '@/plugins/vue-plyr', ssr: false }
   ],
 
@@ -54,8 +57,15 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
-    vendor: ['vue-plyr'],
+    vendor: ['vue-plyr', 'vue-awesome'],
     extend(config, ctx) {
+      if (ctx.isServer) {
+        config.externals = [
+          nodeExternals({
+            whitelist: [/^vue-awesome/]
+          })
+        ]
+      }
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
