@@ -8,15 +8,28 @@
         <PageHeroContent />
       </div>
     </section>
+    <section>
+      <header>
+        <h2>General Touring Information</h2>
+      </header>
+      <main>
+        <DetailsTable/>
+        <Article/>
+      </main>
+    </section>
   </main>
 </template>
 
 <script>
   import PageHeroContent from '@/components/PageHeroContent'
+  import DetailsTable from '@/components/DetailsTable'
+  import Article from '@/components/Article'
 
   export default {
     components: {
-      PageHeroContent
+      PageHeroContent,
+      DetailsTable,
+      Article
     }
   }
 </script>
@@ -28,16 +41,33 @@
 
   }
 
+  h2 {
+    font-size:2rem;
+    text-align:center;
+    margin:4rem 0 3rem;
+    opacity:.8;
+  }
+
   .image__wrapper {
     flex:5;
     & >img {
        max-width:100%;
+      clip-path: polygon(
+        0 0,
+        100% 0,
+        94% 100%,
+        0 100%
+      )
     }
   }
 
   .page-hero__content {
     flex:3;
     align-items:center;
+    display:flex;
+  }
+
+  section > main {
     display:flex;
   }
 

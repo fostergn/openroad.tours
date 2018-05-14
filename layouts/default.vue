@@ -36,7 +36,7 @@ html
   }
 }
 
-main {
+page__container > main {
   min-height:calc(100vh - 120px)
 }
 
