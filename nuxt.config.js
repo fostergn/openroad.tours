@@ -16,7 +16,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:400,700|Playfair+Display:700' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:400,900|Playfair+Display:700' }
     ]
   },
 
