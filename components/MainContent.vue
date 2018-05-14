@@ -5,7 +5,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, eligendi? Ipsa reprehenderit ex quo eos officiis. Itaque id, sequi soluta atque, facilis, dignissimos doloribus iure ex totam quia officia, saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, eligendi? Ipsa reprehenderit ex quo eos officiis. Itaque id, sequi soluta atque, facilis, dignissimos doloribus iure ex totam quia officia, saepe.</p>
       <div class="cta__wrapper">
         <nuxt-link class="button-link" to="/tours"><span>8 Day Tour</span></nuxt-link>
-        <nuxt-link class="button-link button-link--secondary" to="/tours"><span>Explore</span></nuxt-link>
+        <nuxt-link class="button-link button-link--secondary" to="/tours/north-vietnam"><span>Explore</span></nuxt-link>
       </div>
     </article>
     <div class="image__container">
