@@ -1,8 +1,0 @@
-<template>
-  <div>
-    Before you go
-  </div>
-</template>
-
-<script>
-</script>

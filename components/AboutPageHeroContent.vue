@@ -1,8 +1,8 @@
 <template>
   <div class="page-hero__content">
-    <h2>8 Day Guided Tour</h2>
+    <h2>Get To Know Us</h2>
     <p>We’ve curated an adventure that takes you from Hanoi - the bustling heart of Vietnam, through the peaceful rice fields in Yen Bai, up into Ha Giang’s breathtaking mountains, across the stunning Ma Pi Leng Pass, and back down past beautiful Ba Be Lake.</p>
-    <a class="button-link" href="https://drive.google.com/file/d/1OoKRnvGJobL-cSTRhCJY5_3UGoT1s8-4/view?usp=sharing" target="_blank"><span>View Tour Itinerary</span></a>
+<!--     <a class="button-link" href="https://drive.google.com/file/d/1OoKRnvGJobL-cSTRhCJY5_3UGoT1s8-4/view?usp=sharing" target="_blank"><span>View Tour Itinerary</span></a> -->
   </div>
 </template>
 

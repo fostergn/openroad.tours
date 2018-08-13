@@ -2,7 +2,7 @@
   <section>
     <article>
       <h3>Explore North Vietnam</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, eligendi? Ipsa reprehenderit ex quo eos officiis. Itaque id, sequi soluta atque, facilis, dignissimos doloribus iure ex totam quia officia, saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, eligendi? Ipsa reprehenderit ex quo eos officiis. Itaque id, sequi soluta atque, facilis, dignissimos doloribus iure ex totam quia officia, saepe.</p>
+      <p>From majestic mountains to deep caves, gushing waterfalls to tranquil lakes, open highways to single-track trails, northern Vietnam has it all. Our 8-day tour allows you to have the adventure of your dreams. We customize a journey for you and your crew based on experience and what you’re looking to get out of your trip, whether it be scenic drives through the mountains or hard climbs up them.</p>
       <div class="cta__wrapper">
         <nuxt-link class="button-link" to="/tours"><span>8 Day Tour</span></nuxt-link>
         <nuxt-link class="button-link button-link--secondary" to="/tours/north-vietnam"><span>Explore</span></nuxt-link>

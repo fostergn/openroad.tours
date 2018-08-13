@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h5>Checklist before arriving to Vietnam</h5>
+    <h3>Checklist before arriving to Vietnam</h3>
     <p class="list-head">Documents:</p>
     <ul>
       <li>Passport</li>
@@ -16,7 +16,7 @@
         Depending on the time of year the weather in Northern Vietnam is different.
 
         <ul class="sub-list">
-          Please pack clothes accordingly:
+          <p class="list-head sub">Please pack clothes accordingly:</p>
           <li>May - August (hot)</li>
           <li>August - December (medium)</li>
           <li>December - February (can get very cold)</li>
@@ -29,35 +29,44 @@
       <li>Phone</li>
       <li>Recreational Items -- Books, etc.</li>
     </ul>
-
-    <p>Vietnam is one of the cheapest countries in the world. You can bring money over in USD and we will help you exchange it for Dong or you can activate your bank account in Vietnam. Just be aware that once we leave the city there are very few ATMS.
-For a 1 week tour we would recommend bringing between $200 and $300. That would cover plenty of beer, coffee and some souvenirs.
-    </p>
-
   </section>
 </template>
 
 <style lang="scss" scoped>
 
+  h3 {
+    font-size:2rem;
+    text-align:center;
+    margin:4rem 0 2rem;
+    opacity:.8;
+  }
+
   p.list-head {
-    font-size:.8rem;
+    font-size:1rem;
     color:#323648;
     font-weight:bold;
     padding:.5rem 0;
   }
+
+  p.list-head.sub {
+    position: relative;
+    left: -1rem;
+  }
+
 
   ul {
     list-style-type: circle;
     line-height:1.4rem;
     margin-bottom:1rem;
     font-size:.8rem;
+    margin-left:2rem;
 
     &.sub-list {
       padding-left:1rem;
     }
   }
   section {
-    width:50%;
+    width:100%;
     margin:1rem;
     display:flex;
     flex-direction:column;
@@ -68,6 +77,13 @@ For a 1 week tour we would recommend bringing between $200 and $300. That would 
     & > img {
       width: 100%;
     }
+  }
+
+  .list-second-head {
+    font-weight: 600;
+    position: relative;
+    left: -1rem;
+    margin:.5rem 0;
   }
 
   .price {

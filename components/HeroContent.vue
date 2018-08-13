@@ -1,7 +1,8 @@
 <template>
   <div class="video__content">
-    <h2>Lorem ipsum dolor sit amet</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo qui pariatur veniam tenetur voluptates, fugit excepturi soluta ipsa expedita nemo quisquam adipisci mollitia ducimus. Molestias, earum placeat saepe tenetur. Temporibus.</p>
+    <h2>We are Open Road Tours</h2>
+    <p>The motorcycles brought us here, the mountains got us excited, and the people we met along the way kept us coming back.</p>
+    <p>We have combined our passion and know-how to give people the most authentic and unique experiences, in the most beautiful and remote places.</p>
     <nuxt-link class="button-link" to="/tours"><span>Check Out a Tour</span></nuxt-link>
   </div>
 </template>
@@ -9,6 +10,7 @@
 <style lang="scss" scoped>
 
   .video__content {
+    width:500px;
     position: absolute;
     top: 50%;
     z-index: 20;
@@ -32,5 +34,9 @@
   .button-link {
     margin-top:1rem;
     align-self:center;
+  }
+
+  p {
+    margin-bottom:.5rem;
   }
 </style>

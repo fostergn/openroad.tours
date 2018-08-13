@@ -5,9 +5,9 @@
     </header>
     <article>
       <div class="form__context">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, eligendi? Ipsa reprehenderit ex quo eos officiis. Itaque id, sequi soluta atque, facilis, dignissimos doloribus iure ex totam quia officia, saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, eligendi? Ipsa reprehenderit ex quo eos officiis. Itaque id, sequi soluta atque, facilis, dignissimos doloribus iure ex totam quia officia, saepe.</p>
+        <p>We'd love to hear from you whether you have questions, comments, or concerns. Reach out to us either by filling out the form to the right or sending us a message via chat. Shoot us a message from the chat in the bottom right hand corner of your browser and we will get your message instantly. Fill out the form and we will recieve an email and try to get back to you as soon as possible. We'dlove to hear from you!</p>
         <div class="cta__wrapper">
-          <nuxt-link class="button-link button-link--tertiary" to="/tours"><span>Contact Us About a Tour</span></nuxt-link>
+          <!-- <nuxt-link class="button-link button-link--tertiary" to="/tours"><span>Contact Us About a Tour</span></nuxt-link> -->
         </div>
       </div>
       <div class="form__container">

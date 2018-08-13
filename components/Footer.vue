@@ -1,17 +1,20 @@
 <template>
   <footer>
     <ul>
-      <li>Tours</li>
-      <li>Blog</li>
-      <li>Terms</li>
-      <li>Contact Us</li>
+      <li><a href="/tours">Tours</a></li>
+      <li><a href="/terms">Terms</a></li>
+      <li><a href="/contact">Contact Us</a></li>
     </ul>
     <ul>
       <li class="facebook">
-        <icon name="brands/facebook-f" size="l"></icon>
+        <a href="https://www.facebook.com/OpenRoadToursSEA/" target="_blank">
+          <icon name="brands/facebook-f" size="l"></icon>
+        </a>
       </li>
       <li>
-        <icon name="brands/instagram" size="l"></icon>
+        <a href="https://www.instagram.com/openroadtours/?hl=en" target="_blank">
+          <icon name="brands/instagram" size="l"></icon>
+        </a>
       </li>
     </ul>
   </footer>
